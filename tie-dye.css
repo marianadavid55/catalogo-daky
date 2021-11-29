@@ -1,0 +1,181 @@
+body{
+    position: absolute;
+    padding: 0 0 20px 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px;
+}
+header button{
+    background: none;
+    border: none;
+    width: 30px;
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+header button > img{
+    width: 100%;
+    height: 100%;
+}
+
+.tiedye-title{
+    width: 70%;
+    max-width: 270px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+}
+.tie-dye_grid{
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.tie-dye_grid > div{
+    text-align: center;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+.tie-dye_grid > div img{
+    width: 100%;
+}
+.tie-dye_grid > div span{
+    display: block;
+    width: 100%;
+    margin: 3px 0;
+}
+
+.title{
+    width: 90%;
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2px;
+    margin: 10px auto;
+
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    color: white;
+    max-width: 500px;
+    font-size: 1rem;
+}
+.title h2{
+    font-weight: 100;
+}
+
+.tiedye_sizes-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 300px;
+}
+.tiedye_sizes-container > div{
+    margin: 0 20px;
+    text-align: center;
+}
+
+
+.tiedye_sizes-container > div h2{
+    font-family: var(--main-font);
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+.sizes_sizes{
+    display: flex;
+    flex-direction: column;
+}
+.sizes_sizes > span, .customize_styles{
+    margin: 5px 0;
+    font-family: var(--main-font);
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.customize_styles > div{
+    display: inline-block;
+    margin: 11px 5px;
+    text-align: center;
+}
+.texture{
+    display: grid;
+    place-content: center;
+    border-radius: 15px 15px 0 0;
+    width: 30px;
+    overflow: hidden;
+    margin: 0 auto 5px auto;
+}
+.texture img{
+    width: 100%;
+    min-height: 52px;
+}
+
+.main_colors-grid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main_colors-grid > div{
+    text-align: center;
+    padding: 7px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+}
+.main_colors-grid > div > span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 2px auto;
+}
+
+.tie-dye_customize > h3{
+    width: fit-content;
+    margin: 10px auto;
+    font-family: var(--main-font);
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 750px){
+    .main_colors-grid{
+        max-width: 500px;
+    }
+    .main_colors-grid > div > span{
+        width: 35px;
+        height: 35px;
+        margin: 5px auto;
+    }
+    .main_colors-grid > div{
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+    }
+
+    .tiedye-title{
+        font-size: 2.6rem;
+        max-width: 288px;
+    }
+    .tie-dye_grid > div, .sizes_sizes > span, .customize_styles{
+        font-size: 1.3rem;
+    }
+    .tie-dye_grid{
+        gap: 40px;
+    }
+}

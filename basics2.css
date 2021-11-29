@@ -1,0 +1,115 @@
+body{
+    position: absolute;
+    padding: 0 0 20px 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px;
+}
+header button{
+    background: none;
+    border: none;
+    width: 30px;
+    background-color: var(--main-color);
+    padding: 5px;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+header button > img{
+    width: 100%;
+    height: 100%;
+}
+
+.tie-dye_grid{
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.tie-dye_grid > div{
+    text-align: center;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+.tie-dye_grid > div img{
+    width: 100%;
+}
+.tie-dye_grid > div span{
+    display: block;
+    width: 100%;
+    margin: 3px 0;
+}
+
+.title{
+    width: 90%;
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 2px;
+    margin: 10px auto;
+
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    color: white;
+    max-width: 250px;
+    font-size: 1rem;
+}
+.title h2{
+    font-weight: 100;
+}
+
+.basics2_sizes > .sizes{
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.8rem;
+}
+.basics2_sizes > .sizes *{
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.pagination{
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+.pagination > button{
+    border: none;
+    background: none;
+    font-family: var(--main-font);
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: 0 5px;
+}
+.pagination > .active{
+    font-weight: 600;
+}
+.pagination a{
+    text-decoration: none;
+    color: initial;
+}
+
+@media screen and (min-width: 750px){
+    .tie-dye_grid > div, .sizes_sizes > span, .customize_styles{
+        font-size: 1.3rem;
+    }
+    .tie-dye_grid{
+        gap: 40px;
+    }
+    .pagination > button{
+        font-size: 1.8rem;
+    }
+    .basics2_sizes *{
+        font-size: 1.6rem;
+    }
+}
