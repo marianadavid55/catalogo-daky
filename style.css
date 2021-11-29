@@ -1,0 +1,56 @@
+:root{
+    --main-font: 'Lato', sans-serif;
+    --second-font: 'Italiana', serif;
+    --third-font: 'IBM Plex Sans Arabic', sans-serif;
+
+    --main-color: #E8C7B5;
+    --second-color: #323031;
+    --third-color: #747070;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.hiddenMenu{
+    display: none;
+}
+.hambMenu{
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    transform: translateY(62px);
+    background-color: var(--main-color);
+}
+.hambMenu ul{
+    list-style: none;
+    margin: 0 9px;
+}
+.hambMenu li{
+    width: 100%;
+    padding: 4px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.hambMenu a{
+    text-decoration: none;
+    color: white;
+}
+#dot-active, #dot-active2{
+    background-color: black;
+
+}
+.slider-arrow, .slider-arrow2{
+    cursor: pointer;
+} 
